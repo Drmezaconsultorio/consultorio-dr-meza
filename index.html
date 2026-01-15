@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4f6f9;
+      background-color: #f5f7fa;
       color: #333;
       line-height: 1.6;
     }
@@ -17,19 +17,16 @@
     header {
       background: linear-gradient(135deg, #0f4c75, #3282b8);
       color: white;
-      padding: 70px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 2.6rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.15rem;
-      max-width: 900px;
-      margin: 0 auto;
+    header img {
+      max-width: 160px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      background: white;
+      padding: 10px;
     }
 
     section {
@@ -46,30 +43,16 @@
     .card {
       background: white;
       padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
       margin-bottom: 40px;
-    }
-
-    .hero-img {
-      width: 100%;
-      max-height: 420px;
-      object-fit: cover;
-      border-radius: 16px;
-      margin-top: -40px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
     .profile-img {
       width: 220px;
-      border-radius: 14px;
+      border-radius: 12px;
       float: right;
-      margin: 0 0 15px 25px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    ul {
-      padding-left: 20px;
+      margin: 0 0 10px 20px;
     }
 
     .gallery {
@@ -81,23 +64,27 @@
 
     .gallery img {
       width: 100%;
-      border-radius: 14px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    ul {
+      padding-left: 20px;
     }
 
     .buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
-      margin-top: 25px;
+      margin-top: 20px;
     }
 
     .btn {
-      padding: 15px 24px;
+      padding: 14px 22px;
       background-color: #0f4c75;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 8px;
       font-weight: bold;
       transition: background 0.3s;
     }
@@ -107,7 +94,10 @@
     }
 
     iframe {
-      border-radius: 14px;
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 12px;
       margin-top: 20px;
     }
 
@@ -115,8 +105,7 @@
       background-color: #0f4c75;
       color: white;
       text-align: center;
-      padding: 35px 20px;
-      margin-top: 70px;
+      padding: 30px 20px;
     }
   </style>
 </head>
@@ -124,46 +113,34 @@
 <body>
 
 <header>
+  <img src="https://www.risaraldacomforthealth.com/wp-content/uploads/2024/05/11-572x415.jpg" alt="Logo Consultorio Dr. Meza">
   <h1>Consultorio del Dr. Francisco Javier Meza Cadavid</h1>
   <p>
-    Hematología de Adultos · Medicina Interna<br>
-    Más de 30 años de experiencia · Atención médica privada en Colombia
+    Hematología de Adultos · Medicina Interna · Más de 30 años de experiencia<br>
+    Atención médica privada especializada en Colombia
   </p>
 </header>
-
-<img
-  class="hero-img"
-  src="https://cdn.myportfolio.com/fc961e79-80dd-455e-9fa3-2a877dc08f5e/b1290428-0710-4bdf-9494-f91edab1dff6_rw_1920.jpg?h=002edbfeb99d3dfda06030ed5a2d9efd"
-  alt="Consultorio médico"
-/>
 
 <section>
 
   <div class="card">
     <h2>Sobre el Dr. Meza</h2>
-
-    <img
-      src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp"
-      alt="Dr. Francisco Javier Meza"
-      class="profile-img"
-    />
+    <img src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp" 
+         alt="Dr. Francisco Javier Meza Cadavid" 
+         class="profile-img">
 
     <p>
-      El Dr. Francisco Javier Meza Cadavid es médico especialista en Medicina Interna,
-      Hematología de Adultos y trasplante de precursores hematopoyéticos.
-      Cuenta con más de 30 años de experiencia clínica, brindando una atención ética,
-      humana y altamente especializada.
+      Médico especialista en Medicina Interna, Hematología de Adultos y trasplante de precursores hematopoyéticos,
+      con más de 30 años de experiencia clínica.
     </p>
-
     <p>
-      Formación académica en la Universidad del Bosque, Universidad Nacional de Colombia,
-      Universidad del Norte y especialización en trasplante de médula ósea en la
-      Generalitat Valenciana (España).
+      Formación en Universidad del Bosque, Universidad Nacional de Colombia, Universidad del Norte
+      y especialización en trasplante de médula ósea en la Generalitat Valenciana (España).
     </p>
-
     <p>
-      Atención a pacientes bilingües (español – inglés).
+      Atención bilingüe (español – inglés).
     </p>
+    <div style="clear: both;"></div>
   </div>
 
   <div class="card">
@@ -174,6 +151,7 @@
       <li>Mieloma múltiple</li>
       <li>Leucemias</li>
       <li>Hematología de adultos</li>
+      <li>Salud ocupacional</li>
       <li>Trasplante de precursores hematopoyéticos</li>
     </ul>
   </div>
@@ -181,18 +159,20 @@
   <div class="card">
     <h2>Servicios</h2>
     <ul>
-      <li>Consulta hematológica de primera vez y control</li>
+      <li>Consulta externa de primera vez y control</li>
       <li>Aspirado y biopsia de médula ósea</li>
       <li>Segundos conceptos especializados</li>
-      <li>Interpretación de exámenes hematológicos complejos</li>
+      <li>Interpretación de exámenes hematológicos</li>
     </ul>
   </div>
 
   <div class="card">
     <h2>Instalaciones</h2>
+    <p>Espacios cómodos, privados y diseñados para el bienestar del paciente.</p>
     <div class="gallery">
-      <img src="https://alpess10.com.co/wp-content/uploads/2025/02/Alpess-foto-350x420.jpg" alt="Consultorio Alpess">
-      <img src="https://cdn.myportfolio.com/fc961e79-80dd-455e-9fa3-2a877dc08f5e/b1290428-0710-4bdf-9494-f91edab1dff6_rw_1920.jpg?h=002edbfeb99d3dfda06030ed5a2d9efd" alt="Instalaciones médicas">
+      <img src="https://alpess10.com.co/wp-content/uploads/2025/02/Alpess-foto-350x420.jpg" alt="Consultorio">
+      <img src="https://cdn.myportfolio.com/fc961e79-80dd-455e-9fa3-2a877dc08f5e/b1290428-0710-4bdf-9494-f91edab1dff6_rw_1920.jpg" alt="Instalaciones">
+      <img src="https://www.risaraldacomforthealth.com/wp-content/uploads/2024/05/11-572x415.jpg" alt="Consultorio Dr Meza">
     </div>
   </div>
 
@@ -200,27 +180,19 @@
     <h2>Ubicación</h2>
     <p>
       <strong>Edificio Alpess 10</strong><br>
-      Cra 14B #10-47<br>
-      Pereira, Colombia
+      Cra 14B #10-47 – Pereira, Colombia
     </p>
 
-    <iframe
-      src="https://www.google.com/maps?q=Edificio+Alpess+10+Pereira+Colombia&output=embed"
-      width="100%"
-      height="350"
-      loading="lazy">
+    <iframe 
+      src="https://www.google.com/maps?q=Cra%2014B%20%2310-47%20Pereira&output=embed">
     </iframe>
   </div>
 
   <div class="card">
     <h2>Agenda tu consulta</h2>
-    <p>
-      Atención médica privada.<br>
-      No se atienden EPS, medicina prepagada ni seguros.
-    </p>
-
+    <p>Atención médica privada. No EPS, no prepagada.</p>
     <div class="buttons">
-      <a class="btn" href="https://wa.me/573156417153" target="_blank">WhatsApp</a>
+      <a class="btn" href="https://wa.me/573156417153" target="_blank">Agendar por WhatsApp</a>
       <a class="btn" href="tel:+573156417153">Llamar</a>
       <a class="btn" href="mailto:VERONICABZ1982@GMAIL.COM">Correo</a>
     </div>
