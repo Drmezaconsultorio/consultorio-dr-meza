@@ -1,118 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consultorio del Dr. Francisco Javier Meza Cadavid</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Francisco Javier Meza Cadavid | Hematología</title>
 
   <style>
     body {
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #f4f6f9;
-      color: #2c2c2c;
-      line-height: 1.7;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #0f4c75, #3282b8);
+      background: #0b3c5d;
       color: white;
-      padding: 60px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    header img.logo {
-      max-width: 180px;
-      background: white;
-      padding: 12px;
-      border-radius: 14px;
-      margin-bottom: 20px;
+    header h1 {
+      margin-bottom: 10px;
     }
 
-    section {
-      max-width: 1150px;
-      margin: 60px auto;
-      padding: 0 20px;
+    header p {
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+      background: white;
+    }
+
+    .doctor-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .doctor-section img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .doctor-text {
+      flex: 1;
     }
 
     h2 {
-      color: #0f4c75;
+      color: #0b3c5d;
+      margin-top: 40px;
       margin-bottom: 15px;
-    }
-
-    .card {
-      background: white;
-      padding: 35px;
-      border-radius: 14px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-      margin-bottom: 45px;
-    }
-
-    .profile-img {
-      width: 240px;
-      border-radius: 14px;
-      float: right;
-      margin: 0 0 15px 25px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
 
     ul {
       padding-left: 20px;
     }
 
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .service-box {
+      background: #f0f3f6;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .buttons {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 28px;
+      background: #0b3c5d;
+      color: white;
+      text-decoration: none;
+      border-radius: 40px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #06283d;
+    }
+
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 22px;
-      margin-top: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
 
     .gallery img {
       width: 100%;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
 
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      margin-top: 25px;
-    }
-
-    .btn {
-      padding: 15px 26px;
-      background-color: #0f4c75;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #3282b8;
-      transform: translateY(-2px);
-    }
-
-    iframe {
-      width: 100%;
-      height: 380px;
-      border: none;
-      border-radius: 14px;
-      margin-top: 20px;
+    .map {
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
     }
 
     footer {
-      background-color: #0f4c75;
+      background: #0b3c5d;
       color: white;
       text-align: center;
-      padding: 35px 20px;
-    }
-
-    footer p {
-      margin: 6px 0;
-      font-size: 0.95rem;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -120,124 +132,81 @@
 <body>
 
 <header>
-  <!-- LOGO DEL CONSULTORIO -->
-  <img 
-    src="https://www.risaraldacomforthealth.com/wp-content/uploads/2024/05/11-572x415.jpg" 
-    alt="Logo Consultorio Dr. Meza"
-    class="logo"
-  >
-
-  <h1>Consultorio del Dr. Francisco Javier Meza Cadavid</h1>
-  <p>
-    Hematología de Adultos · Medicina Interna<br>
-    Más de 30 años de experiencia · Atención médica privada en Colombia
-  </p>
+  <h1>Dr. Francisco Javier Meza Cadavid</h1>
+  <p>Hematología de Adultos · Atención especializada y humana</p>
 </header>
 
-<section>
+<div class="container">
 
-  <!-- SOBRE EL DOCTOR -->
-  <div class="card">
-    <h2>Sobre el Dr. Meza</h2>
+  <section class="doctor-section">
+    <img src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp" alt="Dr. Francisco Meza">
 
-    <img 
-      src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp"
-      alt="Dr. Francisco Javier Meza Cadavid"
-      class="profile-img"
-    >
+    <div class="doctor-text">
+      <p>
+        Médico especialista en <strong>Hematología de Adultos</strong>, con amplia experiencia
+        en el diagnóstico y tratamiento de enfermedades hematológicas complejas.
+        Atiende en cómodas instalaciones, en un ambiente que promueve el bienestar,
+        la confianza y la atención personalizada.
+      </p>
 
-    <p>
-      El Dr. Francisco Javier Meza Cadavid es médico con especialización en
-      <strong>Medicina Interna</strong>, <strong>Hematología de Adultos</strong> y
-      <strong>trasplante de precursores hematopoyéticos</strong>,
-      con más de <strong>30 años de trayectoria clínica</strong>.
-    </p>
-
-    <p>
-      Formación académica en la Universidad del Bosque, Universidad Nacional de Colombia
-      y Universidad del Norte, con especialización en trasplante de médula ósea
-      en la <strong>Generalitat Valenciana (España)</strong>.
-    </p>
-
-    <p>
-      Atención bilingüe: español e inglés.
-    </p>
-
-    <div style="clear: both;"></div>
-  </div>
-
-  <!-- ESPECIALIDADES -->
-  <div class="card">
-    <h2>Especialidades</h2>
-    <ul>
-      <li>Anemia</li>
-      <li>Hemofilia y trastornos de la coagulación</li>
-      <li>Mieloma múltiple</li>
-      <li>Leucemias</li>
-      <li>Hematología de adultos</li>
-      <li>Salud ocupacional</li>
-      <li>Trasplante de precursores hematopoyéticos</li>
-    </ul>
-  </div>
-
-  <!-- SERVICIOS -->
-  <div class="card">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Consulta externa de primera vez y controles</li>
-      <li>Aspirado y biopsia de médula ósea</li>
-      <li>Segundos conceptos especializados</li>
-      <li>Interpretación de exámenes hematológicos complejos</li>
-    </ul>
-    <p>
-      Procedimientos realizados en un ambiente cómodo, privado y diseñado
-      para el bienestar del paciente.
-    </p>
-  </div>
-
-  <!-- INSTALACIONES -->
-  <div class="card">
-    <h2>Instalaciones</h2>
-    <div class="gallery">
-      <img src="https://alpess10.com.co/wp-content/uploads/2025/02/Alpess-foto-350x420.jpg" alt="Consultorio Dr Meza">
-      <img src="https://cdn.myportfolio.com/fc961e79-80dd-455e-9fa3-2a877dc08f5e/b1290428-0710-4bdf-9494-f91edab1dff6_rw_1920.jpg" alt="Instalaciones médicas">
-      <img src="https://www.risaraldacomforthealth.com/wp-content/uploads/2024/05/11-572x415.jpg" alt="Consultorio e identidad visual">
+      <p>
+        Su consulta está orientada a pacientes que requieren un manejo especializado,
+        seguimiento clínico riguroso y una atención médica de alto nivel.
+      </p>
     </div>
+  </section>
+
+  <h2>Especialidades</h2>
+  <ul>
+    <li>Anemia</li>
+    <li>Hemofilia</li>
+    <li>Leucemia</li>
+    <li>Mieloma múltiple</li>
+    <li>Hematología de adultos</li>
+  </ul>
+
+  <h2>Servicios</h2>
+  <div class="services">
+    <div class="service-box">Consulta externa primera vez y control por hematología</div>
+    <div class="service-box">Aspirado y biopsia de médula ósea</div>
+    <div class="service-box">Segundos conceptos especializados</div>
+    <div class="service-box">Salud ocupacional</div>
+    <div class="service-box">Trasplante de precursores hematopoyéticos</div>
+    <div class="service-box">Atención bilingüe</div>
   </div>
 
-  <!-- UBICACIÓN -->
-  <div class="card">
-    <h2>Ubicación</h2>
-    <p>
-      <strong>Edificio Alpess 10</strong><br>
-      Cra 14B #10-47<br>
-      Pereira, Colombia
-    </p>
+  <div class="buttons">
+    <a href="https://wa.me/573000000000?text=Hola,%20deseo%20agendar%20una%20consulta%20con%20el%20Dr.%20Meza" target="_blank">
+      Agendar por WhatsApp
+    </a>
 
-    <iframe
-      src="https://www.google.com/maps?q=Cra%2014B%20%2310-47%20Pereira&output=embed">
+    <a href="tel:+573000000000">
+      Llamar al consultorio
+    </a>
+  </div>
+
+  <h2>Instalaciones</h2>
+  <div class="gallery">
+    <img src="https://alpess10.com.co/wp-content/uploads/2025/02/Alpess-foto-350x420.jpg" alt="Consultorio 1">
+    <img src="https://cdn.myportfolio.com/fc961e79-80dd-455e-9fa3-2a877dc08f5e/b1290428-0710-4bdf-9494-f91edab1dff6_rw_1920.jpg" alt="Consultorio 2">
+  </div>
+
+  <h2>Ubicación</h2>
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps?q=Valencia&output=embed"
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
     </iframe>
   </div>
 
-  <!-- AGENDA -->
-  <div class="card">
-    <h2>Agenda tu consulta</h2>
-    <p>
-      Atención médica privada. No se atienden EPS, medicina prepagada ni seguros.
-    </p>
-
-    <div class="buttons">
-      <a class="btn" href="https://wa.me/573156417153" target="_blank">Agendar por WhatsApp</a>
-      <a class="btn" href="tel:+573156417153">Llamar al consultorio</a>
-      <a class="btn" href="mailto:VERONICABZ1982@GMAIL.COM">Enviar correo</a>
-    </div>
-  </div>
-
-</section>
+</div>
 
 <footer>
-  <p>© Consultorio del Dr. Francisco Javier Meza Cadavid</p>
-  <p>Pereira, Colombia</p>
+  © Consultorio del Dr. Francisco Javier Meza Cadavid · Hematología
 </footer>
 
 </body>
