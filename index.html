@@ -8,30 +8,30 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
-      line-height: 1.6;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #2c2c2c;
+      line-height: 1.7;
     }
 
     header {
       background: linear-gradient(135deg, #0f4c75, #3282b8);
       color: white;
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
-    header img {
-      max-width: 160px;
-      margin-bottom: 20px;
-      border-radius: 12px;
+    header img.logo {
+      max-width: 180px;
       background: white;
-      padding: 10px;
+      padding: 12px;
+      border-radius: 14px;
+      margin-bottom: 20px;
     }
 
     section {
-      max-width: 1100px;
-      margin: 50px auto;
+      max-width: 1150px;
+      margin: 60px auto;
       padding: 0 20px;
     }
 
@@ -42,62 +42,64 @@
 
     .card {
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      margin-bottom: 40px;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+      margin-bottom: 45px;
     }
 
     .profile-img {
-      width: 220px;
-      border-radius: 12px;
+      width: 240px;
+      border-radius: 14px;
       float: right;
-      margin: 0 0 10px 20px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      margin: 0 0 15px 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
 
     ul {
       padding-left: 20px;
     }
 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+      margin-top: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
     .buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 20px;
+      gap: 18px;
+      margin-top: 25px;
     }
 
     .btn {
-      padding: 14px 22px;
+      padding: 15px 26px;
       background-color: #0f4c75;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
-      transition: background 0.3s;
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
       background-color: #3282b8;
+      transform: translateY(-2px);
     }
 
     iframe {
       width: 100%;
-      height: 350px;
+      height: 380px;
       border: none;
-      border-radius: 12px;
+      border-radius: 14px;
       margin-top: 20px;
     }
 
@@ -105,7 +107,12 @@
       background-color: #0f4c75;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 35px 20px;
+    }
+
+    footer p {
+      margin: 6px 0;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -113,36 +120,53 @@
 <body>
 
 <header>
-  <img src="https://www.risaraldacomforthealth.com/wp-content/uploads/2024/05/11-572x415.jpg" alt="Logo Consultorio Dr. Meza">
+  <!-- LOGO DEL CONSULTORIO -->
+  <img 
+    src="https://www.risaraldacomforthealth.com/wp-content/uploads/2024/05/11-572x415.jpg" 
+    alt="Logo Consultorio Dr. Meza"
+    class="logo"
+  >
+
   <h1>Consultorio del Dr. Francisco Javier Meza Cadavid</h1>
   <p>
-    Hematología de Adultos · Medicina Interna · Más de 30 años de experiencia<br>
-    Atención médica privada especializada en Colombia
+    Hematología de Adultos · Medicina Interna<br>
+    Más de 30 años de experiencia · Atención médica privada en Colombia
   </p>
 </header>
 
 <section>
 
+  <!-- SOBRE EL DOCTOR -->
   <div class="card">
     <h2>Sobre el Dr. Meza</h2>
-    <img src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp" 
-         alt="Dr. Francisco Javier Meza Cadavid" 
-         class="profile-img">
+
+    <img 
+      src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp"
+      alt="Dr. Francisco Javier Meza Cadavid"
+      class="profile-img"
+    >
 
     <p>
-      Médico especialista en Medicina Interna, Hematología de Adultos y trasplante de precursores hematopoyéticos,
-      con más de 30 años de experiencia clínica.
+      El Dr. Francisco Javier Meza Cadavid es médico con especialización en
+      <strong>Medicina Interna</strong>, <strong>Hematología de Adultos</strong> y
+      <strong>trasplante de precursores hematopoyéticos</strong>,
+      con más de <strong>30 años de trayectoria clínica</strong>.
     </p>
+
     <p>
-      Formación en Universidad del Bosque, Universidad Nacional de Colombia, Universidad del Norte
-      y especialización en trasplante de médula ósea en la Generalitat Valenciana (España).
+      Formación académica en la Universidad del Bosque, Universidad Nacional de Colombia
+      y Universidad del Norte, con especialización en trasplante de médula ósea
+      en la <strong>Generalitat Valenciana (España)</strong>.
     </p>
+
     <p>
-      Atención bilingüe (español – inglés).
+      Atención bilingüe: español e inglés.
     </p>
+
     <div style="clear: both;"></div>
   </div>
 
+  <!-- ESPECIALIDADES -->
   <div class="card">
     <h2>Especialidades</h2>
     <ul>
@@ -156,45 +180,56 @@
     </ul>
   </div>
 
+  <!-- SERVICIOS -->
   <div class="card">
     <h2>Servicios</h2>
     <ul>
-      <li>Consulta externa de primera vez y control</li>
+      <li>Consulta externa de primera vez y controles</li>
       <li>Aspirado y biopsia de médula ósea</li>
       <li>Segundos conceptos especializados</li>
-      <li>Interpretación de exámenes hematológicos</li>
+      <li>Interpretación de exámenes hematológicos complejos</li>
     </ul>
+    <p>
+      Procedimientos realizados en un ambiente cómodo, privado y diseñado
+      para el bienestar del paciente.
+    </p>
   </div>
 
+  <!-- INSTALACIONES -->
   <div class="card">
     <h2>Instalaciones</h2>
-    <p>Espacios cómodos, privados y diseñados para el bienestar del paciente.</p>
     <div class="gallery">
-      <img src="https://alpess10.com.co/wp-content/uploads/2025/02/Alpess-foto-350x420.jpg" alt="Consultorio">
-      <img src="https://cdn.myportfolio.com/fc961e79-80dd-455e-9fa3-2a877dc08f5e/b1290428-0710-4bdf-9494-f91edab1dff6_rw_1920.jpg" alt="Instalaciones">
-      <img src="https://www.risaraldacomforthealth.com/wp-content/uploads/2024/05/11-572x415.jpg" alt="Consultorio Dr Meza">
+      <img src="https://alpess10.com.co/wp-content/uploads/2025/02/Alpess-foto-350x420.jpg" alt="Consultorio Dr Meza">
+      <img src="https://cdn.myportfolio.com/fc961e79-80dd-455e-9fa3-2a877dc08f5e/b1290428-0710-4bdf-9494-f91edab1dff6_rw_1920.jpg" alt="Instalaciones médicas">
+      <img src="https://www.risaraldacomforthealth.com/wp-content/uploads/2024/05/11-572x415.jpg" alt="Consultorio e identidad visual">
     </div>
   </div>
 
+  <!-- UBICACIÓN -->
   <div class="card">
     <h2>Ubicación</h2>
     <p>
       <strong>Edificio Alpess 10</strong><br>
-      Cra 14B #10-47 – Pereira, Colombia
+      Cra 14B #10-47<br>
+      Pereira, Colombia
     </p>
 
-    <iframe 
+    <iframe
       src="https://www.google.com/maps?q=Cra%2014B%20%2310-47%20Pereira&output=embed">
     </iframe>
   </div>
 
+  <!-- AGENDA -->
   <div class="card">
     <h2>Agenda tu consulta</h2>
-    <p>Atención médica privada. No EPS, no prepagada.</p>
+    <p>
+      Atención médica privada. No se atienden EPS, medicina prepagada ni seguros.
+    </p>
+
     <div class="buttons">
       <a class="btn" href="https://wa.me/573156417153" target="_blank">Agendar por WhatsApp</a>
-      <a class="btn" href="tel:+573156417153">Llamar</a>
-      <a class="btn" href="mailto:VERONICABZ1982@GMAIL.COM">Correo</a>
+      <a class="btn" href="tel:+573156417153">Llamar al consultorio</a>
+      <a class="btn" href="mailto:VERONICABZ1982@GMAIL.COM">Enviar correo</a>
     </div>
   </div>
 
