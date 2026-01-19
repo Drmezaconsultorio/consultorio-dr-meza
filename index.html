@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Dr. Francisco Javier Meza Cadavid | Medicina Interna y Hematología</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Consultorio privado de Medicina Interna y Hematología de Adultos en Pereira. Atención médica especializada, ética, humana y personalizada.">
+  <meta name="description" content="Consultorio privado del Dr. Francisco Javier Meza Cadavid. Medicina Interna y Hematología de Adultos en Pereira. Atención médica ética, humana y personalizada.">
   <style>
     :root{
       --azul-oscuro:#1f3c5b;
@@ -13,14 +13,10 @@
       --gris-texto:#333;
     }
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+    *{margin:0;padding:0;box-sizing:border-box;}
 
     body{
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:Arial, Helvetica, sans-serif;
       color:var(--gris-texto);
       background:#ffffff;
       line-height:1.65;
@@ -33,15 +29,8 @@
       text-align:center;
     }
 
-    header h1{
-      font-size:2.5rem;
-      font-weight:600;
-      margin-bottom:10px;
-    }
-
-    header p{
-      font-size:1.15rem;
-    }
+    header h1{font-size:2.5rem;font-weight:600;margin-bottom:10px;}
+    header p{font-size:1.15rem;}
 
     section{
       max-width:1200px;
@@ -56,21 +45,11 @@
       margin-bottom:40px;
     }
 
-    .sobre{
+    .grid-2{
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:40px;
-      align-items:center;
-    }
-
-    .sobre img{
-      width:100%;
-      border-radius:10px;
-    }
-
-    .sobre p{
-      margin-bottom:16px;
-      text-align:justify;
+      align-items:start;
     }
 
     .grid{
@@ -92,6 +71,14 @@
       margin-bottom:10px;
     }
 
+    ul{
+      padding-left:20px;
+    }
+
+    ul li{
+      margin-bottom:10px;
+    }
+
     .galeria{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -101,17 +88,6 @@
     .galeria img{
       width:100%;
       border-radius:10px;
-    }
-
-    .contacto{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:40px;
-    }
-
-    .contacto p{
-      margin-bottom:14px;
-      font-size:1rem;
     }
 
     .botones a{
@@ -124,10 +100,6 @@
       text-decoration:none;
       border-radius:6px;
       font-weight:500;
-    }
-
-    .botones a:hover{
-      background:var(--azul-medio);
     }
 
     iframe{
@@ -146,9 +118,7 @@
     }
 
     @media(max-width:900px){
-      .sobre,.contacto{
-        grid-template-columns:1fr;
-      }
+      .grid-2{grid-template-columns:1fr;}
     }
   </style>
 </head>
@@ -161,47 +131,68 @@
 
 <section>
   <h2>Sobre el Dr. Meza</h2>
-  <div class="sobre">
-    <img src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp" alt="Dr. Francisco Javier Meza Cadavid">
+  <div class="grid-2">
+    <img src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp" alt="Dr. Francisco Javier Meza Cadavid" style="width:100%;border-radius:10px;">
     <div>
       <p>
-        El Dr. Francisco Javier Meza Cadavid es médico especialista en Medicina Interna y Hematología de Adultos, con más de 30 años de experiencia clínica en la atención de pacientes adultos con enfermedades hematológicas benignas y malignas.
+        El Dr. Francisco Javier Meza Cadavid es médico especialista en Medicina Interna y Hematología de Adultos, con una práctica médica enfocada en el manejo integral de enfermedades hematológicas complejas en pacientes adultos.
       </p>
       <p>
-        Cuenta con formación académica en la Universidad del Bosque, la Universidad Nacional de Colombia y la Universidad del Norte, así como una especialización en trasplante de precursores hematopoyéticos y trasplante de médula ósea realizada en la Generalitat Valenciana, España.
+        Su ejercicio profesional se fundamenta en una atención ética, humana y completamente centrada en el paciente, con consulta médica privada, personalizada y sin intermediarios.
       </p>
       <p>
-        Su práctica médica se basa en una atención ética, humana y completamente centrada en el paciente, brindando acompañamiento médico personalizado y toma de decisiones clínicas independientes.
-      </p>
-      <p>
-        Ofrece atención bilingüe en español e inglés, cuenta con experiencia en salud ocupacional y ejerce exclusivamente consulta privada, sin atención por EPS, medicina prepagada ni seguros de salud.
+        Atiende exclusivamente pacientes particulares, no presta servicios a EPS, medicina prepagada ni seguros de salud, y brinda atención bilingüe en español e inglés.
       </p>
     </div>
   </div>
 </section>
 
 <section>
+  <h2>Experiencia Profesional</h2>
+  <div class="card">
+    <p>
+      Más de <strong>30 años de experiencia clínica</strong> en Medicina Interna y Hematología de Adultos, con énfasis en diagnóstico, seguimiento y tratamiento de patologías hematológicas benignas y malignas, así como experiencia en salud ocupacional y trasplante de precursores hematopoyéticos.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Formación Académica</h2>
+  <div class="card">
+    <ul>
+      <li>Médico especialista en Medicina Interna</li>
+      <li>Médico especialista en Hematología de Adultos</li>
+      <li>Universidad del Bosque</li>
+      <li>Universidad Nacional de Colombia</li>
+      <li>Universidad del Norte</li>
+      <li>Especialización en trasplante de precursores hematopoyéticos</li>
+      <li>Especialización en trasplante de médula ósea – Generalitat Valenciana, España</li>
+    </ul>
+  </div>
+</section>
+
+<section>
   <h2>Especialidades</h2>
   <div class="grid">
-    <div class="card"><h3>Anemia</h3></div>
-    <div class="card"><h3>Hemofilia y trastornos de la coagulación</h3></div>
-    <div class="card"><h3>Mieloma múltiple</h3></div>
-    <div class="card"><h3>Leucemias</h3></div>
-    <div class="card"><h3>Hematología de adultos</h3></div>
-    <div class="card"><h3>Trasplante de precursores hematopoyéticos</h3></div>
+    <div class="card">Anemia</div>
+    <div class="card">Hemofilia y trastornos de la coagulación</div>
+    <div class="card">Mieloma múltiple</div>
+    <div class="card">Leucemias</div>
+    <div class="card">Hematología de adultos</div>
+    <div class="card">Trasplante de precursores hematopoyéticos</div>
   </div>
 </section>
 
 <section>
   <h2>Servicios</h2>
   <div class="grid">
-    <div class="card"><p>Consulta externa de primera vez y controles por hematología</p></div>
-    <div class="card"><p>Aspirado y biopsia de médula ósea</p></div>
-    <div class="card"><p>Segundos conceptos especializados</p></div>
-    <div class="card"><p>Interpretación de exámenes hematológicos complejos</p></div>
-    <div class="card"><p>Atención médica privada personalizada</p></div>
-    <div class="card"><p>Salud ocupacional</p></div>
-    <div class="card"><p>Atención bilingüe</p></div>
+    <div class="card">Consulta externa de primera vez y controles por hematología</div>
+    <div class="card">Aspirado y biopsia de médula ósea</div>
+    <div class="card">Segundos conceptos especializados</div>
+    <div class="card">Interpretación de exámenes hematológicos complejos</div>
+    <div class="card">Atención médica privada personalizada</div>
+    <div class="card">Salud ocupacional</div>
+    <div class="card">Atención bilingüe</div>
   </div>
 </section>
 
@@ -215,7 +206,7 @@
 
 <section>
   <h2>Contacto y Ubicación</h2>
-  <div class="contacto">
+  <div class="grid-2">
     <div>
       <p><strong>Dirección:</strong> Cra 14B #10-47, Edificio Alpess 10</p>
       <p><strong>Ciudad:</strong> Pereira, Risaralda, Colombia</p>
@@ -227,10 +218,7 @@
       </div>
     </div>
     <div>
-      <iframe
-        src="https://www.google.com/maps?q=Cra+14B+%2310-47+Edificio+Alpess+10+Pereira&output=embed"
-        loading="lazy">
-      </iframe>
+      <iframe src="https://www.google.com/maps?q=Cra+14B+%2310-47+Edificio+Alpess+10+Pereira&output=embed" loading="lazy"></iframe>
     </div>
   </div>
 </section>
@@ -241,4 +229,3 @@
 
 </body>
 </html>
-
