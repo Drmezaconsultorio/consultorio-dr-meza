@@ -2,156 +2,152 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Dr. Francisco Javier Meza Cadavid | Hematología de Adultos</title>
+  <title>Dr. Francisco Javier Meza Cadavid | Medicina Interna y Hematología</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Consultorio privado de Hematología de Adultos en Pereira. Dr. Francisco Javier Meza Cadavid. Atención médica especializada, ética y personalizada.">
+  <meta name="description" content="Consultorio privado de Medicina Interna y Hematología de Adultos en Pereira. Atención médica especializada, ética, humana y personalizada.">
   <style>
-    :root {
-      --primary:#1f3c5b;
-      --secondary:#2f5d8a;
-      --accent:#c9a24d;
-      --light:#f5f7fa;
-      --dark:#1a1a1a;
-      --text:#333;
+    :root{
+      --azul-oscuro:#1f3c5b;
+      --azul-medio:#2f5d8a;
+      --gris-claro:#f4f6f9;
+      --gris-texto:#333;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    body {
-      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-      color: var(--text);
-      line-height: 1.6;
-      background-color: #ffffff;
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--gris-texto);
+      background:#ffffff;
+      line-height:1.65;
     }
 
-    header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: #ffffff;
-      padding: 70px 20px;
-      text-align: center;
+    header{
+      background:linear-gradient(135deg,var(--azul-oscuro),var(--azul-medio));
+      color:#fff;
+      padding:80px 20px;
+      text-align:center;
     }
 
-    header h1 {
-      font-size: 2.4rem;
-      font-weight: 600;
-      margin-bottom: 10px;
+    header h1{
+      font-size:2.5rem;
+      font-weight:600;
+      margin-bottom:10px;
     }
 
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.95;
+    header p{
+      font-size:1.15rem;
     }
 
-    section {
-      padding: 70px 20px;
-      max-width: 1200px;
-      margin: auto;
+    section{
+      max-width:1200px;
+      margin:auto;
+      padding:80px 20px;
     }
 
-    section h2 {
-      font-size: 2rem;
-      color: var(--primary);
-      margin-bottom: 30px;
-      text-align: center;
+    section h2{
+      text-align:center;
+      font-size:2rem;
+      color:var(--azul-oscuro);
+      margin-bottom:40px;
     }
 
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
+    .sobre{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
     }
 
-    .about img {
-      width: 100%;
-      border-radius: 10px;
+    .sobre img{
+      width:100%;
+      border-radius:10px;
     }
 
-    .about p {
-      margin-bottom: 15px;
-      text-align: justify;
+    .sobre p{
+      margin-bottom:16px;
+      text-align:justify;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
     }
 
-    .card {
-      background: var(--light);
-      border-radius: 10px;
-      padding: 25px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    .card{
+      background:var(--gris-claro);
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
     }
 
-    .card h3 {
-      color: var(--secondary);
-      font-size: 1.2rem;
-      margin-bottom: 10px;
+    .card h3{
+      font-size:1.15rem;
+      color:var(--azul-medio);
+      margin-bottom:10px;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
+    .galeria{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
     }
 
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
+    .galeria img{
+      width:100%;
+      border-radius:10px;
     }
 
-    .contact {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
+    .contacto{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
     }
 
-    .contact-info p {
-      margin-bottom: 15px;
-      font-size: 1rem;
+    .contacto p{
+      margin-bottom:14px;
+      font-size:1rem;
     }
 
-    .buttons a {
-      display: inline-block;
-      margin-right: 15px;
-      margin-top: 10px;
-      padding: 12px 22px;
-      background-color: var(--primary);
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 500;
+    .botones a{
+      display:inline-block;
+      margin-top:10px;
+      margin-right:15px;
+      padding:12px 22px;
+      background:var(--azul-oscuro);
+      color:#fff;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:500;
     }
 
-    .buttons a:hover {
-      background-color: var(--secondary);
+    .botones a:hover{
+      background:var(--azul-medio);
     }
 
-    iframe {
-      width: 100%;
-      height: 350px;
-      border: none;
-      border-radius: 10px;
+    iframe{
+      width:100%;
+      height:350px;
+      border:0;
+      border-radius:10px;
     }
 
-    footer {
-      background-color: var(--dark);
-      color: #cccccc;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
+    footer{
+      background:#1a1a1a;
+      color:#ccc;
+      text-align:center;
+      padding:30px 20px;
+      font-size:0.9rem;
     }
 
-    @media(max-width: 900px) {
-      .about,
-      .contact {
-        grid-template-columns: 1fr;
+    @media(max-width:900px){
+      .sobre,.contacto{
+        grid-template-columns:1fr;
       }
     }
   </style>
@@ -165,20 +161,20 @@
 
 <section>
   <h2>Sobre el Dr. Meza</h2>
-  <div class="about">
+  <div class="sobre">
     <img src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp" alt="Dr. Francisco Javier Meza Cadavid">
     <div>
       <p>
-        El Dr. Francisco Javier Meza Cadavid es médico especialista en Medicina Interna y Hematología de Adultos, con más de 30 años de experiencia clínica dedicados al diagnóstico, seguimiento y tratamiento de enfermedades hematológicas complejas en pacientes adultos.
+        El Dr. Francisco Javier Meza Cadavid es médico especialista en Medicina Interna y Hematología de Adultos, con más de 30 años de experiencia clínica en la atención de pacientes adultos con enfermedades hematológicas benignas y malignas.
       </p>
       <p>
-        Cuenta con una sólida formación académica en la Universidad del Bosque, la Universidad Nacional de Colombia y la Universidad del Norte, además de una especialización avanzada en trasplante de precursores hematopoyéticos y trasplante de médula ósea realizada en la Generalitat Valenciana, España.
+        Es egresado de la Universidad del Bosque, con formación académica adicional en la Universidad Nacional de Colombia y la Universidad del Norte. Cuenta con especialización en trasplante de precursores hematopoyéticos y trasplante de médula ósea realizada en la Generalitat Valenciana, España.
       </p>
       <p>
-        Su ejercicio profesional se caracteriza por una atención ética, humana y profundamente centrada en el paciente, ofreciendo un acompañamiento médico personalizado, claro y responsable. Atiende exclusivamente consulta privada, sin convenios con EPS, medicina prepagada ni aseguradoras, garantizando un servicio médico independiente y de alto nivel.
+        Su práctica médica se fundamenta en una atención ética, humana, rigurosa y completamente centrada en el paciente, ofreciendo acompañamiento personalizado y toma de decisiones médicas basadas en criterio clínico independiente.
       </p>
       <p>
-        El Dr. Meza brinda atención bilingüe en español e inglés y cuenta con experiencia en salud ocupacional, integrando el rigor científico con una visión integral del bienestar del paciente.
+        Brinda atención bilingüe en español e inglés, tiene experiencia en salud ocupacional y ejerce exclusivamente consulta privada, sin atención por EPS, medicina prepagada ni seguros de salud.
       </p>
     </div>
   </div>
@@ -199,60 +195,40 @@
 <section>
   <h2>Servicios</h2>
   <div class="grid">
-    <div class="card">
-      <h3>Consulta hematológica</h3>
-      <p>Consulta externa de primera vez y controles por hematología.</p>
-    </div>
-    <div class="card">
-      <h3>Procedimientos diagnósticos</h3>
-      <p>Aspirado y biopsia de médula ósea.</p>
-    </div>
-    <div class="card">
-      <h3>Segundos conceptos</h3>
-      <p>Segundos conceptos especializados para diagnósticos y tratamientos complejos.</p>
-    </div>
-    <div class="card">
-      <h3>Interpretación de exámenes</h3>
-      <p>Interpretación de exámenes hematológicos complejos.</p>
-    </div>
-    <div class="card">
-      <h3>Atención privada personalizada</h3>
-      <p>Atención médica privada personalizada y sin intermediarios.</p>
-    </div>
-    <div class="card">
-      <h3>Salud ocupacional</h3>
-      <p>Evaluaciones y conceptos médicos en el contexto de salud ocupacional.</p>
-    </div>
-    <div class="card">
-      <h3>Atención bilingüe</h3>
-      <p>Atención médica en español e inglés.</p>
-    </div>
+    <div class="card"><p>Consulta externa de primera vez y controles por hematología</p></div>
+    <div class="card"><p>Aspirado y biopsia de médula ósea</p></div>
+    <div class="card"><p>Segundos conceptos especializados</p></div>
+    <div class="card"><p>Interpretación de exámenes hematológicos complejos</p></div>
+    <div class="card"><p>Atención médica privada personalizada</p></div>
+    <div class="card"><p>Salud ocupacional</p></div>
+    <div class="card"><p>Atención bilingüe</p></div>
   </div>
 </section>
 
 <section>
-  <h2>Consultorio</h2>
-  <div class="gallery">
-    <img src="https://alpess10.com.co/wp-content/uploads/2025/02/Alpess-foto-350x420.jpg" alt="Instalaciones del consultorio">
+  <h2>Galería</h2>
+  <div class="galeria">
+    <img src="https://alpess10.com.co/wp-content/uploads/classified-listing/2024/02/DrFraMeza3.webp" alt="Dr. Francisco Javier Meza Cadavid">
+    <img src="https://alpess10.com.co/wp-content/uploads/2025/02/Alpess-foto-350x420.jpg" alt="Consultorio Edificio Alpess 10">
   </div>
 </section>
 
 <section>
   <h2>Contacto y Ubicación</h2>
-  <div class="contact">
-    <div class="contact-info">
+  <div class="contacto">
+    <div>
       <p><strong>Dirección:</strong> Cra 14B #10-47, Edificio Alpess 10</p>
       <p><strong>Ciudad:</strong> Pereira, Risaralda, Colombia</p>
-      <p><strong>Teléfono / WhatsApp:</strong> 315 641 7153</p>
-      <p><strong>Correo electrónico:</strong> Disponible previa solicitud telefónica</p>
-      <div class="buttons">
+      <p><strong>Teléfono y WhatsApp:</strong> 315 641 7153</p>
+      <p><strong>Correo electrónico:</strong> contacto@drfranciscomeza.com</p>
+      <div class="botones">
         <a href="https://wa.me/573156417153" target="_blank">WhatsApp</a>
         <a href="tel:+573156417153">Llamar</a>
       </div>
     </div>
     <div>
-      <iframe 
-        src="https://www.google.com/maps?q=Edificio+Alpess+10+Pereira&output=embed"
+      <iframe
+        src="https://www.google.com/maps?q=Cra+14B+%2310-47+Edificio+Alpess+10+Pereira&output=embed"
         loading="lazy">
       </iframe>
     </div>
@@ -260,7 +236,7 @@
 </section>
 
 <footer>
-  © Consultorio Privado del Dr. Francisco Javier Meza Cadavid · Hematología de Adultos · Pereira, Colombia
+  © Consultorio Privado del Dr. Francisco Javier Meza Cadavid · Medicina Interna y Hematología de Adultos · Pereira, Colombia
 </footer>
 
 </body>
